@@ -2,7 +2,7 @@
 
 ### 설치할 라이브러리
 
-- [] react-router-dom
+- [x] react-router-dom
 - [x] styled-components
 - [x] styled-reset
 - [] axios
