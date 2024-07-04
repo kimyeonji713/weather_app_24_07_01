@@ -8,10 +8,10 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 const queryClient = new QueryClient();
 
 root.render(
-  <React.StrictMode>
-    <QueryClientProvider client={queryClient}>
-      <GlobalStyled />
-      <Router />
-    </QueryClientProvider>
-  </React.StrictMode>
+  // <React.StrictMode>
+  <QueryClientProvider client={queryClient}>
+    <GlobalStyled />
+    <Router />
+  </QueryClientProvider>
+  // </React.StrictMode>
 );
