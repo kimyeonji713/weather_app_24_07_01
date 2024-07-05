@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/weather_app_24_07_01/static/js/main.abc63271.js",
+    "index.html": "/weather_app_24_07_01/index.html",
+    "main.abc63271.js.map": "/weather_app_24_07_01/static/js/main.abc63271.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.abc63271.js"
+  ]
+}
