@@ -7,7 +7,7 @@
 - [x] styled-reset
 - [x] axios
 - [x] tan-stack-query
-- [] react-helmet
+- [x] react-helmet(async)
 
 ### 작업 내용
 
@@ -18,8 +18,8 @@
 - [x] 스타일 작업
 - [x] 현재 위치 얻어오기
 - [x] 현재 위치에 맞는 날씨 정보 요청
-- [] 타이틀 설정
-- [] 코드 리팩토링
+- [x] 타이틀 설정
+- [x] 코드 리팩토링
 - [] 404 UI
 
 ### Reference

@@ -3,6 +3,11 @@ import { getWeather } from "../api";
 import styled from "styled-components";
 import { useCurrentPos } from "../lib/useCurrentPos";
 import { Loading } from "../components/Loading";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faPlus } from "@fortawesome/free-solid-svg-icons";
+import { Helmet } from "react-helmet-async";
+import { Title } from "../components/Title";
 import { Header } from "../components/Header";
 import { Section } from "../components/Section";
 
@@ -20,22 +25,11 @@ const Container = styled.div`
 
 export const Home = () => {
   const { lat, lon } = useCurrentPos();
-  //   getWeather();
-  //   const query = useQuery
+
   const { data, isLoading } = useQuery({
     queryKey: ["weather", lat, lon],
     queryFn: getWeather,
   });
-
-  console.log(data);
-
-  // useCurrentPos();
-  // const pos = useCurrentPos();
-  // console.log(pos);
-
-  // const { lat, lon } = useCurrentPos();
-  // console.log(lat, lon);
-  console.log(isLoading);
 
   return (
     <>
@@ -43,10 +37,11 @@ export const Home = () => {
         <Loading />
       ) : (
         <>
+          <Title titleName={"Home"} />
           {data && (
             <Container>
-              <Header />
-              <Section />
+              <Header headerData={data} />
+              <Section tempData={data} />
             </Container>
           )}
         </>

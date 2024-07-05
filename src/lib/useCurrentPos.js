@@ -24,7 +24,7 @@ export const useCurrentPos = () => {
 
   //   navigator.geolocation.getCurrentPosition(location);
 
-  console.log(lat, lon);
+  // console.log(lat, lon);
 
   return {
     lat,
